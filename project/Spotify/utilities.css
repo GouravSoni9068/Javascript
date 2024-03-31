@@ -1,0 +1,38 @@
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+.justifyContent{
+    justify-content: center;
+}
+.alignItem{
+    align-items: center;
+}
+.whiteColor{
+    color: white;
+}
+
+.blackBackgroundColor{
+    background-color: black;
+}
+
+.greyishBackgroundColor{
+    background-color: rgb(17, 17, 17);
+}
+.greyColor{
+    color: rgb(144, 144, 144);
+}
+.popins{
+    font-family: "Poppins", sans-serif;
+
+}
+
+.spaceBetween{
+    justify-content: space-between;
+}
+.bold{
+    font-weight: bold;
+}
+

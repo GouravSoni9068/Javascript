@@ -1,0 +1,49 @@
+body{
+    padding: 0px;
+    margin: 0;
+    background-color: #7A7265;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+
+}
+
+.calculate{
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid 1px;
+    background-color: #022B3A;
+    color: white;
+    font-size: large;
+    font-weight: bold;  
+}
+
+.calculate:hover{
+    background-color: #022b3ae7;
+
+}
+
+.result{
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guide{
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            border: solid 2px;
+            padding: 7px 10px;
+            font-weight: bold;
+            font-size: large;
+            margin: 0px 7px;
+            
+        }
+        .btn:hover{
+            opacity: 0.9;
+            cursor: pointer;
+        }
+        #stop{
+            background-color: red;
+        }
+        #start{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>hello Everyone</h1>
+    <button id="start" class="btn">start</button>
+    <button id="stop" class="btn">stop</button>
+
+
+    <script>
+
+        let interval=(str)=>{
+            console.log(str,Date.now());
+        }
+
+        // let set=setInterval(interval,2000,"hi");
+
+
+        // start Button
+        let set;
+        document.querySelector("#start").addEventListener("click",()=>{
+            set=setInterval(interval,1000,"HI");
+        })
+
+
+        // stop Buttton
+        document.querySelector("#stop").addEventListener("click",()=>{
+            clearInterval(set);
+        })
+
+        
+        
+    </script>
+</body>
+</html>

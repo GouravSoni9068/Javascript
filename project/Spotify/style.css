@@ -1,0 +1,292 @@
+/* WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #333; /* Dark background color */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #666; /* Darker color for the thumb */
+    border-radius: 5px;
+  }
+  
+  /* Firefox */
+  /* Note: Firefox currently only supports styling the scrollbar thumb */
+  /* For track and other styles, you may need to use JavaScript-based solutions */
+  /* For the purpose of this example, we'll just style the thumb */
+  /* You may need to use a vendor prefix for older versions of Firefox */
+  scrollbar {
+    scrollbar-color: #666 #333; /* thumb color, track color */
+  }
+  
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;    
+}
+.container{
+    gap: 10px;
+    margin: 10px;
+    
+    
+}
+.left{
+    width: 25vw;
+    gap: 10px;
+    height: 97vh;
+    position: sticky;
+    top: 0px;
+}
+
+.upar{
+    border-radius: 7px;
+    font-size:15px;
+    gap: 21px;
+    font-weight: 600;
+    padding: 20px 26px;
+}
+.upar .logoimg:hover{
+    cursor: pointer;
+}
+
+.logo{
+    height: 27px;
+}
+
+.line{
+    gap: 20px;
+}
+
+.home:hover{
+    cursor: pointer;
+}
+
+.search:hover{
+    transition:color;
+    transition-duration: .5s;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+.niche{
+    background-color: rgb(22,22, 22);
+    border-radius: 7px;
+    height: -webkit-fill-available;
+    position: relative;
+}
+
+.library{
+    font-size: medium;
+    font-weight: bold;
+    justify-content: space-between;
+    margin:12px 22px;
+
+}
+
+.library .l:hover{
+    transition:color;
+    transition-duration: .5s;
+    cursor: pointer;
+    color: white;
+}
+
+.library .l{
+    gap: 10px;
+}
+
+
+.links{
+    font-size: 13px;
+    gap: 10px 27px;
+    flex-wrap: wrap;
+    margin: 4px 25px;
+}
+.links li{
+    list-style: none;
+}
+
+.links li:hover{
+    cursor: pointer;
+}
+
+.footer{
+    margin: 30px 0px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.right{
+    
+    width: 75vw;
+    border-radius: 7px;
+    
+}
+
+.header{
+    background-color: rgb(9, 9, 9);
+    position: sticky;
+    top: 0px;
+    padding: 6px 20px;
+    height: 70px;
+    opacity: 0.9;
+    z-index: 10;
+
+}
+
+.arrows{
+    gap: 10px;
+}
+.arrow{
+    border-radius:30px ;
+}
+.arrow:hover{
+    cursor: pointer;
+}
+
+.inside{
+    gap: 20px;
+    
+}
+.signup{
+    font-weight: bold;
+    font-size: 16px;
+}
+.login{
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+}
+.signup:hover,.login:hover{
+    cursor: pointer;
+    font-size: 17px;
+}
+.signup:hover{
+    color: white;
+}
+.chotaHeader{
+    padding: 5px 10px;
+    padding-left: 30px;
+    margin-top: 45px;
+    margin-bottom: 10px 
+}
+.playlist{
+    font-size: x-large;
+}
+.playlist:hover,.showAll:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.cards{
+    max-height: 55vh;
+    overflow-y: scroll;
+    margin: 0px 15px;
+    gap: 7px;
+    flex-wrap: wrap;
+    font-size: small;
+    /* font-weight: bold; */
+    font-family: "Poppins", sans-serif;
+}
+
+.card{
+    z-index: 1;
+
+    position: relative;
+    width: 214px;
+    /* border: solid 2px red; */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(23, 23, 23);
+}
+.photo img{
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 8px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+.card svg{
+    transition: all;
+    transition-duration: 0.4s;
+    background-color: rgb(41, 216, 41);
+    border-radius: 20px;
+    color: black;
+    width: 40px;
+    position: absolute;
+    top: 160px;
+    right: 25px;
+    box-shadow: 0 0 10px black;
+    opacity: 0;
+}
+.card:hover{
+    cursor: pointer;
+    background-color:rgb(46, 46, 46);
+    transition: all;
+    transition-duration: .4s;
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+}
+.playBar{
+    background-color: rgb(76, 91, 105);
+    width: 100%;
+    padding: 7px;
+    
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+/* .niche .songs ul{
+    margin: 20px 25px;
+    list-style: decimal;
+    gap: 10px;
+    font-size: larger;
+    font-weight: bold;
+    
+} 
+.niche .songs ul li:hover{
+    transition: all;
+    transition-duration: .5s;
+    cursor: pointer;
+    color: white;
+} */
+
+.niche .songs ul{
+    gap: 4px;
+}
+.niche .songs ul li{
+    background-color: black;
+    padding: 10px 6px;
+    margin: 0px 3px;
+    border-radius: 7px;
+    gap: 14px;
+}
+ .niche .songs ul li:hover{
+    transition: all;
+    transition-duration: .5s;
+    /* cursor: pointer;
+    background-color: #0A0A0A;
+    color: white;
+     */
+} 
+.niche .songs ul li .playBtn{
+    position: absolute;
+    right: 10px;
+}
+.musicName{
+    font-weight: bold;
+}
+
