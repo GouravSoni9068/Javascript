@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: aliceblue;
+
+        }
+        .btn{
+            height: 100px;
+            width: 200px;
+            background-color: blanchedalmond;
+            margin: 30px;
+        }
+        #images{
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Images</h2>
+    <!-- <ul id="images">
+        <li><div class="btn" id="photoshop">photo</div></li>
+        <li><div class="btn" id="river">river</div></li>
+        <li><div class="btn" id="owl">owl</div></li>
+        <li><div class="btn" id="player">player</div></li>
+    </ul> -->
+    <a href="https://www.google.com/" style="color: white;">google</a>
+
+    <script>
+        
+        // let AllLi=document.querySelectorAll('li');
+        // AllLi.forEach((ele)=>{
+        //     ele.addEventListener('click',(e)=>{
+        //         ele.remove()
+                
+        //     })
+        // })
+        
+
+        // let allImages=document.querySelector("#images")
+        // allImages.addEventListener('click',(e)=>{
+        //     if(e.target.className==='btn')
+        //     {
+        //         let removeElement=e.target.parentNode;
+        //         removeElement.remove()
+        //     }
+        // })
+        document.querySelector('a').addEventListener('click',(e)=>
+        { 
+            e.preventDefault()
+            console.log("google");
+            
+        })
+
+        
+
+        
+    </script>
+</body>
+</html>
