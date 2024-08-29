@@ -13,7 +13,7 @@ let shopingCart=[
         price:1000
     },
     {
-        course:"py",
+        course:"py", 
         price:1500
     },
 ]
